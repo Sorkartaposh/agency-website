@@ -51,13 +51,6 @@
 	});
 })(jQuery);
 
-	// page loader
-	$(window).on('load',function(){
-		setTimeout(function(){ 
-		$('.page-loader').fadeOut('slow');
-		},500);
-	});
-
 	// disbale code inspect
 
 
