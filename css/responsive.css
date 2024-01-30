@@ -43,8 +43,12 @@ Small Screen - Tablate
 ====================================
 */
 @media screen and (min-width: 768px) and (max-width: 991px) {
-
-
+.menu-item {
+    display: none;
+}
+.hamburger {
+    display: block;
+}
 
 
 
@@ -81,7 +85,12 @@ Small Screen - Mobile
 ====================================
 */
 @media screen and (min-width: 576px) and (max-width: 767px) {	
-
+    .menu-item {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+    }
 
 
 
@@ -116,8 +125,18 @@ Xtra Small Screen - Small Mobile
 ====================================
 */
 @media screen and (max-width: 576px) {
-
-
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+    .menu-item {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+    }
 
 
 
@@ -147,3 +166,11 @@ Xtra Small Screen - Small Mobile
 
 
 }
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  }

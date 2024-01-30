@@ -33,6 +33,7 @@
 		<!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
+
 		<main>
 			<!-- header-area start -->	
 			<header class="header-area" >
@@ -41,7 +42,13 @@
 						<div class="col-lg-3">
 							<div class="logo">
 								<a href="#">logo</a>
+								<div class="hamburger" onclick="openNav()">
+									<span></span>
+									<span></span>
+									<span></span>
+								</div>
 							</div>
+							
 						</div>
 						<div class="col-lg-9">
 							<div class="menu-item">
@@ -59,6 +66,21 @@
 					</div>					
 				</div>
 			</header>
+			<div class="progress-container">
+				<div class="progress-bar" id="myBar"></div>
+			</div> 
+
+			<!-- nav overlay -->
+			<div id="myNav" class="overlay">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				<div class="overlay-content">
+				  <a href="#" onclick="closeNav()">Home</a>
+				  <a href="#services" onclick="closeNav()">services</a>
+				  <a href="#" onclick="closeNav()">our team</a>
+				  <a href="#" onclick="closeNav()">work</a>
+				  <a href="#" onclick="closeNav()">blog</a>
+				</div>
+			  </div>
 			<!-- header-area end -->	
 	
 			<!-- hero-area end -->	
@@ -318,7 +340,7 @@
 						</div>
 						<div class="col-lg-6">
 							<div class="map-area">
-								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d233667.499305022!2d90.25487485406434!3d23.781067237446248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b087026b81%3A0x8fa563bbdd5904c2!2sDhaka!5e0!3m2!1sen!2sbd!4v1704122861398!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115713.70836432814!2d89.926131379238!3d24.998301844714252!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3757d67552cd9be5%3A0x5f5a1e73907e02f1!2sSherpur%20Sadar%20Upazila!5e0!3m2!1sen!2sbd!4v1706632967974!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 							</div>
 						</div>
 					</div>
@@ -377,6 +399,15 @@
 		<!-- Scroll-Top button -->
 		<a href="#" class="scrolltotop"><i class="fa-solid fa-arrow-up"></i></a>
 		
-	
+		<script>
+			// nav open
+			function openNav() {
+				document.getElementById("myNav").style.width = "100%";
+			  }
+			  
+			  function closeNav() {
+				document.getElementById("myNav").style.width = "0%";
+			  }
+		</script>
 	</body>
 </html>
